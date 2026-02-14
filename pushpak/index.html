@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pushpak | Plants & Trees</title>
+    <link rel="stylesheet" href="/js/css/style.css">
+</head>
+<body>
+
+<!-- ===== Header ===== -->
+<header class="header">
+    <div class="logo">🌿 PUSHPAK</div>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Plants & Trees</a>
+        <a href="#">Garden Tips</a>
+        <a href="#">Facts</a>
+        <a href="#">Quiz</a>
+        <a href="#">About Us</a>
+    </nav>
+    <div class="search-box">
+        <input type="text" placeholder="Search plants...">
+        <button>Search</button>
+    </div>
+</header>
+
+<!-- ===== Main Container ===== -->
+<div class="container">
+
+    <!-- ===== Sidebar ===== -->
+    <aside class="sidebar">
+    <h3>Categories</h3>
+    <ul id="categoryList">
+        <li class="active" data-category="all">All Plants</li>
+        <li data-category="flowering">Flowering</li>
+        <li data-category="indoor">Indoor</li>
+        <li data-category="outdoor">Outdoor</li>
+        <li data-category="fruit">Fruit</li>
+        <li data-category="succulent">Succulents</li>
+    </ul>
+
+    <h3>Filters</h3>
+
+    <label>Max Price (₹): <span id="priceValue">1000</span></label>
+    <input type="range" id="priceFilter" min="100" max="2000" value="1000">
+
+    <label>Plant Size</label>
+    <select id="sizeFilter">
+        <option value="all">All</option>
+        <option value="small">Small</option>
+        <option value="medium">Medium</option>
+        <option value="large">Large</option>
+    </select>
+
+    <label>Sunlight</label>
+    <select id="sunFilter">
+        <option value="all">All</option>
+        <option value="low">Low</option>
+        <option value="medium">Medium</option>
+        <option value="high">High</option>
+    </select>
+</aside>
+   
+
+    <!-- ===== Content ===== -->
+    <main class="content">
+        <h2>Plants & Trees</h2>
+
+        <!-- Plant Cards -->
+        <div class="grid" id="plantGrid">
+
+    <div class="card"
+        data-category="flowering"
+        data-price="300"
+        data-size="medium"
+        data-sun="high">
+        <img src="images/rose.jpg">
+        <p>Rose</p>
+    </div>
+
+    <div class="card"
+        data-category="flowering"
+        data-price="250"
+        data-size="medium"
+        data-sun="high">
+        <img src="images/sunflower.jpg">
+        <p>Sunflower</p>
+    </div>
+
+    <div class="card"
+        data-category="indoor"
+        data-price="400"
+        data-size="small"
+        data-sun="low">
+        <img src="images/snake.jpg">
+        <p>Snake Plant</p>
+    </div>
+
+    <div class="card"
+        data-category="outdoor"
+        data-price="800"
+        data-size="large"
+        data-sun="high">
+        <img src="images/bonsai.jpg">
+        <p>Bonsai Tree</p>
+    </div>
+
+</div>
+
+
+        <!-- Featured Products -->
+        <h2>Featured Products</h2>
+        <div class="grid">
+            <div class="product">
+                <img src="images/tools.jpg">
+                <h4>Gardening Tool Set</h4>
+                <p>⭐⭐⭐⭐⭐</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="images/lavender.jpg">
+                <h4>Potted Lavender</h4>
+                <p>⭐⭐⭐⭐⭐</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="images/fertilizer.jpg">
+                <h4>Organic Fertilizer</h4>
+                <p>⭐⭐⭐⭐⭐</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="images/pot.jpg">
+                <h4>Decorative Pot</h4>
+                <p>⭐⭐⭐⭐⭐</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+
+    </main>
+</div>
+
+<script src="/pushpak/js/js/script.js"></script>
+</body>
+</html>
